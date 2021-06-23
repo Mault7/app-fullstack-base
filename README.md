@@ -111,23 +111,22 @@ docker-compose restart
 Una vez realizada la instalación anterior, ingrese desde un navegador de internet a la url: http://localhost:8000 para visualizar la página web.
 
 
-ACLARACION IMPORTANTE: Es importante tomar en cuenta que se tiene que eperar un momento a que se suban todos los elementos de docker antes de abrir la web , de lo contrario , no se podra visualizar nada 
+ACLARACION IMPORTANTE: Tomar en cuenta que el servicico demora en levantarse es necesario esperar un momento a que se suban todos los elementos de docker antes de abrir la web , de lo contrario , no se podra visualizar nada.
 
 Esta aplicacion maneja materialize un framework de css para estilos de aplicaciones web
 
 La programacion de esta aplicacion esta basada en typescript y html
 
-La funcionalidad del del itema es administrar dispositivos electricos hogarenos se pueden agregar dispositivos nuevo, modificar existentes y eliminarlos.
+La funcionalidad del del sistema es administrar dispositivos electricos hogareños y que se pueden agregar dispositivos nuevos, modificar existentes y eliminarlos.
 
-tenemos control on/off para los diferentes elementos del sistema 
+Tenemos solamente control on/off para los diferentes elementos del sistema. Se preve a futuro darle mas modo de control como dimerizacion.
 
-
-trabaja directamente con api en nodejs lo que se pretende a futuro es manejar una base de datos donde impacte directamente las condifuraciones.
+Trabaja directamente con api en nodejs lo que se pretende a futuro es manejar una base de datos donde impacte directamente las configuraciones.
 
 
 # Backend
  Para el lado de backend en el código se podrán observar todos los métodos encargados de guardar los datos provenientes del frontend.
-Se optó por utilizar solo recepción de métodos por POST y GET. Para los métodos POST, se recojen los datos desde el objeto `req.body`.
+Se optó por utilizar métodos por POST y GET. Para los métodos POST, se recojen los datos desde el objeto `req.body`.
 
 Dentro del código del programa del backend se optó por comentar las acciones de nuestras apis con notas sobre qué es lo que hace cada pedacito de código en particular.
 # Licencia
