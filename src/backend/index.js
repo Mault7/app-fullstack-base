@@ -61,9 +61,6 @@ app.post('/insert/', function(req, res, next) {
     dato.push(formdata);
     res.json(dato);
 });
-<<<<<<< HEAD
-
-=======
 //esta api es para eliminar dispositivos se filtra el parametro ID del dispositivo el cual queremos eliminar y luego recorre a todos los elementos del datos.json para recorrer los id los demas dispositivos 
 app.post('/delet/', function(req, res, next) {
     
@@ -77,7 +74,6 @@ app.post('/delet/', function(req, res, next) {
     }
 });
 //
->>>>>>> a5ccda2... tp_final_daw
 app.listen(PORT, function(req, res) {
     console.log("NodeJS API running correctly");
 });
