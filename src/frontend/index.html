@@ -2,8 +2,11 @@
 <html>
 
 <head>
+<<<<<<< HEAD
     <title>IOT</title>
     <link rel="icon" href="./static/images/gotoiot-logo.png" type="image/png" />
+=======
+>>>>>>> a5ccda2... tp_final_daw
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="static/css/styles.css" media="screen,projection" />
@@ -13,16 +16,24 @@
 <body>
     <main>
         <!-- Navigation bar -->
+<<<<<<< HEAD
         <nav style="background-color:#121980">
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo left" style="margin-left: 40px;">Panel de control</a>
                 <i class="large material-icons" style="margin-left: 10px;">developer_board</i>
+=======
+        <nav class="colorFondo">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo left" style="margin-left: 40px;">Panel de control</a>
+                <i class="large material-icons" style="margin-left: 15px">developer_board</i>
+>>>>>>> a5ccda2... tp_final_daw
             </div>
         </nav>
         <!-- Page Body -->
         <div class="container">
             <br />
             <div class="row">
+<<<<<<< HEAD
                 <div class="input-field col s4">
                     <input value="" id="device" type="text" class="validate">
                     <label class="active" for="first_name2">Nombre de dispositivo</label>
@@ -66,6 +77,93 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
    
+=======
+                <div class="col l6 s6 m6">
+                    <a id="add_dev" class="waves-effect waves-light modal-trigger btn" href="#modal1">+ agregar dispositivos</a>
+                </div>
+                <div class="col l6 s6 m6">
+                    <a id="lis_dev" class="waves-effect waves-light btn right">Listar dispositivos</a>
+                </div>
+            </div>
+            <div class="row">
+                <ul id='devicesList'>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- Page Footer -->
+    <footer class="page-footer colorFondo">
+        <div class="container">
+            <br>
+            <div class="row">
+                <h3 class="title">FIUBA CeIot</h3>
+                <p>Autor: Jose Mauricio Lara Tapia</p>
+                <p>2020</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="modal1" class="modal modal-fixed-footer">
+        <form id="formadd" method="POST" action="#">
+            <div class="modal-content">
+                <h4><span id="titulo_modal"></span></h4>
+                <div class="row">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Nombre" id="nombre_dispositivo" type="text" class="validate">
+                            <label for="nombre">Nombre</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Descripción" id="descripcion_dispositivo" type="text" class="validate">
+                            <label for="descrip_dis">Descripción</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12" id="select">
+                            <select id="tipo_dispositivo">
+                                <option value="" selected disabled>Seleccionar</option>
+                                <option value="0">On/Off</option>
+                                <option value="1">Dimerizable</option>
+                            </select>
+                            <label>Tipo</label>
+                        </div>
+                        <span><input id="id_dispositivo" type="text" hidden></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-small">Cancelar</a>
+            <a href="#!" id="modalsave" class="modal-close waves-effect waves-green btn-small red">Guardar</a>
+        </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var form_modal = document.querySelectorAll('.modal');
+            var instances_mod = M.Modal.init(form_modal, { opacity: 0.6 });
+            var elem_select = document.querySelectorAll('select')
+            var instances_sel = M.FormSelect.init(elem_select, {});
+        });
+    </script>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="./static/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/MyFramework.js"></script>
+    <script type="text/javascript" src="js/ViewDevices.js"></script>
+
+
+
+    <!--
+    <script type="text/javascript" src="js/user.js"></script>
+    -->
+>>>>>>> a5ccda2... tp_final_daw
 </body>
 
 </html>

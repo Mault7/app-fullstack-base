@@ -8,3 +8,21 @@ body {
 main {
     flex: 1 0 auto;
 }
+<<<<<<< HEAD
+=======
+
+
+.colorFondo{
+    background-color: rgb(36, 21, 105);
+       
+}
+.nombreDisp{
+    font-size: 25px;
+    color: rgb(35, 131, 134);
+}
+
+.switch label .lever {
+    width: 100px ;
+}
+
+>>>>>>> a5ccda2... tp_final_daw
